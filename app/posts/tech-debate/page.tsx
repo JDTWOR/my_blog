@@ -77,6 +77,10 @@ export default function TechDebatePage() {
           <div className="space-y-8 mb-8">
             {debateTopics.map((debate, index) => {
               const IconComponent = debate.icon
+              const [left, right] = debate.topic.split(" vs ")
+              const leftKey = (left.toLowerCase() + "Points") as keyof typeof debate
+              const rightKey = (right.toLowerCase() + "Points") as keyof typeof debate
+
               return (
                 <Card key={index} className="bg-gray-800 border-gray-700">
                   <CardHeader>
@@ -89,16 +93,24 @@ export default function TechDebatePage() {
                     <div className="grid md:grid-cols-2 gap-6">
                       <div className="bg-gray-700 rounded-lg p-4">
                         <h4 className="text-green-400 font-semibold mb-3">
-                          {debate.topic.split(" vs ")[0]} Advantages
+                          {left} Advantages
                         </h4>
                         <ul className="space-y-2">
- 
+                          {debate[leftKey]?.map((point, i) => (
+                            <li key={i}>
+                              <Badge variant="secondary" className="mr-2" /> {point}
+                            </li>
+                          ))}
                         </ul>
                       </div>
                       <div className="bg-gray-700 rounded-lg p-4">
-                        <h4 className="text-blue-400 font-semibold mb-3">{debate.topic.split(" vs ")[1]} Advantages</h4>
+                        <h4 className="text-blue-400 font-semibold mb-3">{right} Advantages</h4>
                         <ul className="space-y-2">
-
+                          {debate[rightKey]?.map((point, i) => (
+                            <li key={i}>
+                              <Badge variant="secondary" className="mr-2" /> {point}
+                            </li>
+                          ))}
                         </ul>
                       </div>
                     </div>
