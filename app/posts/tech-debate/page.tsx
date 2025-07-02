@@ -58,24 +58,18 @@ export default function TechDebatePage() {
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <div className="bg-gray-700 rounded-lg p-8 text-center mb-4">
-                <Video className="mx-auto h-16 w-16 text-green-400 mb-4" />
-                <p className="text-gray-300 mb-4">Replace this placeholder with your video embed or link</p>
-                <div className="bg-gray-600 rounded p-4 text-left">
-                  <p className="text-sm text-gray-300 mb-2">
-                    <strong>Video URL:</strong> [Your video link here]
-                  </p>
-                  <p className="text-xs text-gray-400">You can embed YouTube, Vimeo, or other video platforms here</p>
-                </div>
-              </div>
-              <div className="flex gap-2">
-                <Badge variant="secondary" className="bg-green-900 text-green-400">
-                  Debate Content
-                </Badge>
-                <Badge variant="outline" className="border-green-500 text-green-400">
-                  Technology Comparison
-                </Badge>
-              </div>
+            <div className="bg-gray-100 rounded-lg overflow-hidden mb-8 aspect-video">
+              <iframe
+                width="100%"
+                height="100%"
+                src="https://www.youtube.com/embed/sPlwSRSGKNc"
+                title="What I Like and Dislike"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                className="w-full h-full"
+              ></iframe>
+            </div>
             </CardContent>
           </Card>
 
@@ -98,23 +92,13 @@ export default function TechDebatePage() {
                           {debate.topic.split(" vs ")[0]} Advantages
                         </h4>
                         <ul className="space-y-2">
-                          {debate.javaPoints.map((point, pointIndex) => (
-                            <li key={pointIndex} className="flex items-center text-gray-300 text-sm">
-                              <span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>
-                              {point}
-                            </li>
-                          ))}
+ 
                         </ul>
                       </div>
                       <div className="bg-gray-700 rounded-lg p-4">
                         <h4 className="text-blue-400 font-semibold mb-3">{debate.topic.split(" vs ")[1]} Advantages</h4>
                         <ul className="space-y-2">
-                          {debate.pythonPoints.map((point, pointIndex) => (
-                            <li key={pointIndex} className="flex items-center text-gray-300 text-sm">
-                              <span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>
-                              {point}
-                            </li>
-                          ))}
+
                         </ul>
                       </div>
                     </div>

@@ -50,16 +50,13 @@ export default function LinusTorvaldsPage() {
             <CardContent className="p-6">
               <div className="text-center mb-4">
                 <h3 className="text-xl font-semibold text-green-400 mb-2">Linus Torvalds Infographic</h3>
-                <p className="text-gray-400 text-sm mb-4">
-                  Upload your Linus Torvalds infographic to replace this placeholder
-                </p>
               </div>
               <div className="bg-gray-700 rounded-lg p-8 text-center">
                 <Image
-                  src="/placeholder.svg?height=800&width=600"
+                  src="/linus_tovalds.png?height=1000&width=800"
                   alt="Linus Torvalds Infographic"
-                  width={600}
-                  height={800}
+                  width={800}
+                  height={1000}
                   className="mx-auto rounded-lg"
                 />
               </div>

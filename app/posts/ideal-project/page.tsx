@@ -64,18 +64,13 @@ export default function IdealProjectPage() {
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <div className="bg-gray-700 rounded-lg p-8 text-center mb-4">
-                <Mic className="mx-auto h-16 w-16 text-green-400 mb-4" />
-                <p className="text-gray-300 mb-4">Replace this placeholder with your audio player or link</p>
-                <div className="bg-gray-600 rounded p-4 text-left">
-                  <p className="text-sm text-gray-300 mb-2">
-                    <strong>Audio URL:</strong> [Your audio link here]
-                  </p>
-                  <p className="text-xs text-gray-400">
-                    You can embed audio from various platforms or use HTML5 audio player
-                  </p>
-                </div>
-              </div>
+             <div className="bg-gray-100 rounded-lg p-4 mb-8">
+              <h3 className="text-lg font-semibold mb-2">Audio: My Ideal Project</h3>
+              <audio controls className="w-full">
+                <source src="/my_ideal_project.mp3" type="audio/mp3" />
+                Your browser does not support the audio element.
+              </audio>
+            </div>
               <div className="flex gap-2">
                 <Badge variant="secondary" className="bg-green-900 text-green-400">
                   Audio Content
@@ -97,15 +92,7 @@ export default function IdealProjectPage() {
             </CardHeader>
             <CardContent className="text-gray-300 space-y-4">
               <p>
-                My ideal project would be a comprehensive learning management system specifically designed for software
-                development students. It would combine the best aspects of modern educational technology with practical
-                coding environments and collaborative features.
-              </p>
-              <p>
-                The system would integrate seamlessly with development tools, provide real-time feedback on coding
-                exercises, and create a community where students can learn from each other. It would be built using Java
-                for the backend, with a modern web interface, and would support multiple programming languages and
-                frameworks.
+              To create the most complete and practical web-based learning platform for Fedora Linux users, empowering them to become real web developers through hands-on, project-based learning in native development environments.
               </p>
             </CardContent>
           </Card>
@@ -177,19 +164,7 @@ export default function IdealProjectPage() {
             </CardHeader>
             <CardContent className="text-gray-300 space-y-4">
               <p>
-                This project represents more than just a technical challenge—it's about creating something that could
-                genuinely help other students in their learning journey. Having experienced the challenges of learning
-                programming firsthand, I understand the importance of having the right tools and community support.
-              </p>
-              <p>
-                The project would allow me to apply everything I'm learning at SENA while contributing to the broader
-                educational community. It combines my interests in Java development, database design, user experience,
-                and open-source collaboration.
-              </p>
-              <p>
-                Most importantly, it would be a project that grows with me as I develop my skills, providing endless
-                opportunities for improvement and feature additions while serving a real purpose in the educational
-                technology space.
+              This project is more than a technical exercise — it's a meaningful way to support fellow students. It lets me apply what I learn at SENA while contributing to open-source education. As I grow, the platform grows too, making it a lasting and evolving tool for learning.
               </p>
             </CardContent>
           </Card>

@@ -58,7 +58,7 @@ export default function PLEMindMapPage() {
               </div>
               <div className="bg-gray-700 rounded-lg p-8 text-center">
                 <Image
-                  src="/placeholder.svg?height=600&width=800"
+                  src="/mapa_mental.png"
                   alt="Personal Learning Environment Mind Map"
                   width={800}
                   height={600}

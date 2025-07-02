@@ -57,19 +57,18 @@ export default function LikesDislikesPage() {
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <div className="bg-gray-700 rounded-lg p-8 text-center mb-4">
-                <Video className="mx-auto h-16 w-16 text-green-400 mb-4" />
-                <p className="text-gray-300 mb-4">Replace this placeholder with your video embed or link</p>
-                <div className="bg-gray-600 rounded p-4 text-left">
-                  <p className="text-sm text-gray-300 mb-2">
-                    <strong>Video URL:</strong> [Your video link here]
-                  </p>
-                  <p className="text-xs text-gray-400">You can embed YouTube, Vimeo, or other video platforms here</p>
-                </div>
-              </div>
-              <Badge variant="secondary" className="bg-green-900 text-green-400">
-                Personal Content
-              </Badge>
+            <div className="bg-gray-100 rounded-lg overflow-hidden mb-8 aspect-video">
+              <iframe
+                width="100%"
+                height="100%"
+                src="https://www.youtube.com/embed/Sz9iBAfl4Dw"
+                title="What I Like and Dislike"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                className="w-full h-full"
+              ></iframe>
+            </div>
             </CardContent>
           </Card>
 
